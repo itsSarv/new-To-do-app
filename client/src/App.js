@@ -1,11 +1,23 @@
-import Car from "./Car";
+import { Col, Container, Row } from "react-bootstrap";
+import Title from "./components/Title";
+import AddInputGroup from "./components/AddInputGroup";
+import ListTask from "./components/ListTask";
 
-const cars = ["Ford", "Mustang", "Rolls-Royace", "Lambo"];
 function App() {
   return (
-    <>
-      <Car color="blue" cars={cars}></Car>
-    </>
+    <Container className="text-center">
+      <Row>
+        <Col md={{ span: 6, offset: 3 }}>
+          <Title title="TODO APP" />
+          <AddInputGroup
+            label="Add new Todo?"
+            placeholder="Eg: Do Laundry"
+            Buttonname="Add the task"
+          />
+          <ListTask />
+        </Col>
+      </Row>
+    </Container>
   );
 }
 
