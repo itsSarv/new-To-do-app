@@ -16,7 +16,7 @@ function SubtaskList({ subtasks }) {
       )}
       <AddInputGroup
         label="Add new Subtasks"
-        Buttonname="Add Subtask"
+        Buttonname="Add Subtask "
         placeholder="Eg. Do Laundry"
         variant="primary"
       />
